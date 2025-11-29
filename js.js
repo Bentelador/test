@@ -1,4 +1,4 @@
-function ben(serch){
+export function ben(serch){
   let result;
   fetch('https://raw.githubusercontent.com/Bentelador/movie-bai/refs/heads/main/MDB.json')
     .then(response => response.json())
@@ -9,4 +9,3 @@ function ben(serch){
   const benner = res.filter(n => n.title.toLowerCase().includes(serch))
   return benner
 }
-module.exports = ben;
