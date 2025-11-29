@@ -4,8 +4,9 @@ const Tab = document.getElementById("table")
 const button = document.getElementById("bun")
 button.addEventListener("click", async () => {
     const benner = await ben("dune")
-    console.log(await benner)
+    console.log(benner)
 })
+
 
 
 
