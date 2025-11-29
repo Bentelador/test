@@ -6,8 +6,9 @@ function ben(serch){
       result = jsonData;
     })
     
-  const benner = res.filter(n => n.title.toLowerCase().includes(serch))
+  const benner = result.filter(n => n.title.toLowerCase().includes(serch))
   return benner
 }
 
 export default ben
+
