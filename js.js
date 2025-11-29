@@ -4,13 +4,12 @@ function ben(serch){
     .then(response => response.json())
     .then(jsonData => {
       result = jsonData
-      console.log(result);
+      const benner = result.filter(n => n.title.toLowerCase().includes(serch))
+      return benner;
     })
-    console.log(result)
-  const benner = result.filter(n => n.title.toLowerCase().includes(serch))
-  return benner
 }
 
 export default ben
+
 
 
