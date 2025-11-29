@@ -2,8 +2,9 @@ import ben from "./js.js"
 
 const Tab = document.getElementById("table")
 const button = document.getElementById("bun")
+const search = document.getElementById("search")
 button.addEventListener("click", async () => {
-    const benner = await ben("dune")
+    const benner = await ben(search.value)
     benner.forEach(moventry => {
       const Row = Tab.insertRow()
       const ID = Row.insertCell(0)
@@ -18,6 +19,7 @@ button.addEventListener("click", async () => {
       Synopsis.textContent = moventry.synopsis
     });
 })
+
 
 
 
