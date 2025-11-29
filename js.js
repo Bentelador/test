@@ -1,4 +1,4 @@
-function ben(serch){
+async function ben(serch){
   let result;
   fetch('https://raw.githubusercontent.com/Bentelador/movie-bai/refs/heads/main/MDB.json')
     .then(response => response.json())
@@ -11,6 +11,7 @@ function ben(serch){
 }
 
 export default ben
+
 
 
 
