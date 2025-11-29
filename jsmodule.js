@@ -1,5 +1,4 @@
-const ben = require("./js.js");
-console.log(ben("dune"));
+import ben from ./js.js
 
 const Tab = document.getElementById("table")
 const button = document.getElementById("bun")
@@ -20,5 +19,6 @@ button.addEventListener("click",function(){
         Synopsis.textContent = moventry.synopsis
     })
 })
+
 
 
