@@ -4,12 +4,13 @@ async function ben(serch){
     .then(response => response.json())
     .then(jsonData => {
       result = jsonData
-      const benner = await result.filter(n => n.title.toLowerCase().includes(serch))
+      const benner = result.filter(n => n.title.toLowerCase().includes(serch))
       return benner;
     })
 }
 
 export default ben
+
 
 
 
